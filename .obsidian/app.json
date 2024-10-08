@@ -1,0 +1,15 @@
+{
+  "promptDelete": false,
+  "spellcheckLanguages": null,
+  "spellcheck": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A5",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 70
+  },
+  "attachmentFolderPath": "_Изображения",
+  "readableLineLength": false
+}

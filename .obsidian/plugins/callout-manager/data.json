@@ -1,0 +1,37 @@
+{
+  "callouts": {
+    "custom": [
+      "test"
+    ],
+    "settings": {
+      "test": [
+        {
+          "changes": {
+            "icon": "lucide-church"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "24, 119, 60"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "150, 243, 186"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

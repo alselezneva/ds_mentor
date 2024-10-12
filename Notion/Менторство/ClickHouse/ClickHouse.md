@@ -28,20 +28,20 @@
 
 ## Важно знать
 
-1. Типы данных в ClickHouse
-2. комбинаторные ф [https://clickhouse.com/docs/ru/sql-reference/aggregate-functions/combinators](https://clickhouse.com/docs/ru/sql-reference/aggregate-functions/combinators)
-3. массивы [https://clickhouse.com/docs/en/sql-reference/functions/array-functions](https://clickhouse.com/docs/en/sql-reference/functions/array-functions)
-4. map [https://clickhouse.com/docs/ru/sql-reference/functions/tuple-map-functions](https://clickhouse.com/docs/ru/sql-reference/functions/tuple-map-functions) + как работать с lambda в ClickHouse
-5. оконные ф [https://clickhouse.com/docs/en/sql-reference/window-functions](https://clickhouse.com/docs/en/sql-reference/window-functions)
-6. CTE Common Table Expressions  [https://clickhouse.com/docs/en/sql-reference/statements/select/with](https://clickhouse.com/docs/en/sql-reference/statements/select/with)
-7. limit by [https://clickhouse.com/docs/en/sql-reference/statements/select/limit-by](https://clickhouse.com/docs/en/sql-reference/statements/select/limit-by)
-8. внешние словари [https://clickhouse.com/docs/en/sql-reference/functions/ext-dict-functions](https://clickhouse.com/docs/en/sql-reference/functions/ext-dict-functions)
-9. создание таблиц [https://clickhouse.com/docs/ru/sql-reference/statements/create/table](https://clickhouse.com/docs/ru/sql-reference/statements/create/table)
-10. вставка значений [https://clickhouse.com/docs/ru/sql-reference/statements/insert-into](https://clickhouse.com/docs/ru/sql-reference/statements/insert-into)
-11. удаление таблиц [https://clickhouse.com/docs/ru/sql-reference/statements/drop](https://clickhouse.com/docs/ru/sql-reference/statements/drop)
-12. строки [https://clickhouse.com/docs/en/sql-reference/functions/string-search-functions](https://clickhouse.com/docs/en/sql-reference/functions/string-search-functions) + регулярные выражения
-13. arrayJoin [https://clickhouse.com/docs/en/sql-reference/functions/array-join](https://clickhouse.com/docs/en/sql-reference/functions/array-join)
-14. даты и время [https://clickhouse.com/docs/en/sql-reference/functions/date-time-functions](https://clickhouse.com/docs/en/sql-reference/functions/date-time-functions)
+1. Типы данных 
+2. [Комбинаторные функции](https://clickhouse.com/docs/ru/sql-reference/aggregate-functions/combinators)
+3. [Массивы](https://clickhouse.com/docs/en/sql-reference/functions/array-functions)
+4. [map functions](https://clickhouse.com/docs/ru/sql-reference/functions/tuple-map-functions) + как работать с lambda в ClickHouse
+5. [Оконные функции](https://clickhouse.com/docs/en/sql-reference/window-functions)
+6. [CTE Common Table Expressions](https://clickhouse.com/docs/en/sql-reference/statements/select/with)
+7. [limit by](https://clickhouse.com/docs/en/sql-reference/statements/select/limit-by)
+8. [Внешние словари](https://clickhouse.com/docs/en/sql-reference/functions/ext-dict-functions)
+9. [Создание таблиц](https://clickhouse.com/docs/ru/sql-reference/statements/create/table)
+10. [Вставка значений](https://clickhouse.com/docs/ru/sql-reference/statements/insert-into)
+11. [Удаление таблиц](https://clickhouse.com/docs/ru/sql-reference/statements/drop)
+12. [Работа со строками](https://clickhouse.com/docs/en/sql-reference/functions/string-search-functions) + регулярные выражения
+13. [arrayJoin](https://clickhouse.com/docs/en/sql-reference/functions/array-join)
+14. [Дата и время](https://clickhouse.com/docs/en/sql-reference/functions/date-time-functions)
 15. any при группировке
 16. какие есть движки (+ практика создания таблиц)
 

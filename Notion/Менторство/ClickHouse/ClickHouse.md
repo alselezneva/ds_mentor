@@ -75,6 +75,10 @@ Q = """
 df = db_client.query_dataframe(Q, external_tables=external_tables)
 ```
 
+## Explain 
+![image](https://github.com/user-attachments/assets/9bbe5831-f7e1-4581-abce-acf77c5ad470)
+
+
 ## Пример 
 Создание таблицы: Заказы клиентов
 ```

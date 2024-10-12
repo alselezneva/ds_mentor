@@ -4,13 +4,10 @@
 ---
 # ClickHouse
 
-  
+![image](https://github.com/user-attachments/assets/1d7d2015-57f5-4fd3-877b-0d58546c74b2)
 
-  
 
-  
 
-![[image.png]]
 
 ## Официальный канал
 
@@ -77,7 +74,3 @@ Q = """
 	
 df = db_client.query_dataframe(Q, external_tables=external_tables)
 ```
-
-## Explain
-
-![[image 1.png]]

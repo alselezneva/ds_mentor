@@ -1,7 +1,4 @@
----
-Категория:
-  - DS-материал
----
+
 # ClickHouse
 
 ![image](https://github.com/user-attachments/assets/1d7d2015-57f5-4fd3-877b-0d58546c74b2)

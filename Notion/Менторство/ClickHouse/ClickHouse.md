@@ -4,8 +4,6 @@
 ![image](https://github.com/user-attachments/assets/1d7d2015-57f5-4fd3-877b-0d58546c74b2)
 
 
-
-
 ## Официальный канал
 
 - [https://t.me/clickhouse_ru](https://t.me/clickhouse_ru)
@@ -22,6 +20,11 @@
 ## Песочница
 
 - [https://fiddle.clickhouse.com](https://fiddle.clickhouse.com/)
+
+## Как поднять ClickHouse
+- https://youtu.be/W22Dp3rGkis?si=sWyHfSHaErQeMBn7
+- https://youtu.be/Zla6iN7W5ns?si=KrwyqbFq46pk32EY
+- https://youtu.be/I1h2YaWW9PE?si=Ei9ZXzDewsCAupHu
 
 ## Важно знать
 

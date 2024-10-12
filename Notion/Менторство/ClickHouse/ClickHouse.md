@@ -119,3 +119,137 @@ INSERT INTO orders (order_id, client_id, order_date, amount, status, items, deta
 6. items: Массив товаров, содержащий названия продуктов.
 7. details: Карта, содержащая дополнительные данные о заказе (например, метод оплаты и способ доставки).
 
+Вот несколько примеров задач на основе предоставленных данных для каждой из указанных тем:
+
+---
+
+
+### 1. **Комбинаторные функции**  
+**Задача:**  
+Используйте функцию `groupArray` для получения списка всех товаров, которые заказывал клиент с `client_id = 101`.  
+**Запрос:**  
+```sql
+SELECT client_id, groupArray(items) AS all_items
+FROM orders
+WHERE client_id = 101
+GROUP BY client_id;
+```
+
+---
+
+### 2. **Массивы**  
+**Задача:**  
+Напишите запрос, который вернёт все заказы, где в массиве `items` содержится товар `'laptop'`.  
+**Запрос:**  
+```sql
+SELECT *
+FROM orders
+WHERE has(items, 'laptop');
+```
+
+---
+
+### 3. **map functions + lambda в ClickHouse**  
+**Задача:**  
+Используйте функцию `arrayMap`, чтобы получить массив товаров в верхнем регистре.  
+**Запрос:**  
+```sql
+SELECT order_id, arrayMap(x -> upper(x), items) AS upper_items
+FROM orders;
+```
+
+---
+
+### 4. **Оконные функции**  
+**Задача:**  
+Найдите сумму заказов каждого клиента и укажите ранг клиента по общей сумме заказов (используйте оконную функцию).  
+**Запрос:**  
+```sql
+SELECT client_id, 
+       SUM(amount) OVER (PARTITION BY client_id) AS total_amount,
+       RANK() OVER (ORDER BY SUM(amount) OVER (PARTITION BY client_id) DESC) AS rank
+FROM orders;
+```
+
+---
+
+### 5. **CTE (Common Table Expressions)**  
+**Задача:**  
+Создайте временную таблицу с заказами, которые были завершены, и выведите их.  
+**Запрос:**  
+```sql
+WITH completed_orders AS (
+    SELECT * FROM orders WHERE status = 'completed'
+)
+SELECT * FROM completed_orders;
+```
+
+---
+
+### 6. **limit by**  
+**Задача:**  
+Выведите не более двух заказов для каждого клиента, используя `LIMIT BY`.  
+**Запрос:**  
+```sql
+SELECT *
+FROM orders
+ORDER BY order_date DESC
+LIMIT 2 BY client_id;
+```
+
+---
+
+### 7. **Удаление таблиц**  
+**Задача:**  
+Удалите таблицу `orders`.  
+**Запрос:**  
+```sql
+DROP TABLE orders;
+```
+
+---
+
+### 8. **Работа со строками + регулярные выражения**  
+**Задача:**  
+Напишите запрос, который выбирает заказы, где в способе доставки встречается слово `'courier'`.  
+**Запрос:**  
+```sql
+SELECT *
+FROM orders
+WHERE details['delivery'] LIKE '%courier%';
+```
+
+---
+
+### 9. **arrayJoin**  
+**Задача:**  
+Используйте `arrayJoin` для получения строки с каждым товаром отдельно.  
+**Запрос:**  
+```sql
+SELECT order_id, arrayJoin(items) AS item
+FROM orders;
+```
+
+---
+
+### 10. **Дата и время**  
+**Задача:**  
+Выведите все заказы, сделанные в октябре 2024 года.  
+**Запрос:**  
+```sql
+SELECT *
+FROM orders
+WHERE toMonth(order_date) = 10 AND toYear(order_date) = 2024;
+```
+
+---
+
+### 11. **any при группировке**  
+**Задача:**  
+Используйте `any` для получения случайного способа доставки для каждого клиента.  
+**Запрос:**  
+```sql
+SELECT client_id, any(details['delivery']) AS random_delivery
+FROM orders
+GROUP BY client_id;
+```

@@ -20,11 +20,7 @@
 
 Так будем выглядеть профиль на GitHub по окончании этой статьи:
 
-  
-
-![[CleanShot_2023-05-03_at_08.03.022x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_08.03.022x.png)
 
 ### **Создание README.md на GitHub**
 
@@ -32,23 +28,21 @@
 
 1. Войдите на [GitHub](https://github.com/)
 2. Нажмите `+` в правом верхнем углу и выберите `New Repository`
-    
-    ![[CleanShot_2023-05-03_at_07.17.092x.png]]
-    
+
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.17.092x.png)
+
 3. Откроется страница создания нового репозитория. В названии укажите имя пользователя из вашего профиля. После того как вы введете имя пользователя, будет показана информация о том, что вы создаете особый репозиторий.
-    
-    ![[CleanShot_2023-05-03_at_07.19.382x.png]]
-    
+
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.19.382x.png)
+
 4. Под описанием репозитория не забудьте установить отметку `Public`, чтобы файл `README.md` был виден всем.
 5. Обязательно установите отметку `Add a README file`. Это создаст файл `README.md`, в котором мы и будем работать. Сравните со скриншотом, у вас должно получиться также.
-    
-    ![[CleanShot_2023-05-03_at_07.20.482x.png]]
-    
+
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.20.482x.png)
+
 6. Далее нажимаем кнопку `Create repository`. Репозиторий успешно создан. Зайдите в только что созданный репозиторий и увидите, что в нем уже есть файл `README.md`.
 
 В следующих разделах мы добавим информацию в наш файл `README.md`. Мы будет работать с файлом через интерфейс GitHub, но вы можете использовать любой другой текстовый редактор.
-
-  
 
 ### **Добавление GIF-изображений и значков**
 
@@ -66,24 +60,16 @@
 
 В атрибуте `src` указываем ссылку, которую мы ранее скопировали. Поскольку весь контент в этой части будет выровнен по центру, мы поместили изображение в HTML-тег `<div>` с атрибутом `align="center"`.
 
-  
-
 > [!important]  
-> GitHub преобразует элементы Markdown в файле README.md в HTML. После этого HTML очищается и из соображений безопасности некоторые HTML-теги игнорируются, например <script>, <style> и т. д. По этим причинам мы использовали атрибут align вместо CSS-стилей.  
-
-  
+> GitHub преобразует элементы Markdown в файле README.md в HTML. После этого HTML очищается и из соображений безопасности некоторые HTML-теги игнорируются, например \<script\>, \<style\> и т. д. По этим причинам мы использовали атрибут align вместо CSS-стилей.
 
 Перейдем в окно предпросмотра. Наша картинка появилась на странице:
 
-![[CleanShot_2023-05-03_at_07.25.142x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.25.142x.png)
 
 Далее мы добавим значки для ссылок на социальные сети, при клике на которые будет открываться нужный сайт. Вы можете добавить значки для самых разных сайтов: Instagram, Facebook, Twitter и т. д. Мы добавим три значка: Twitter, YouTube и LinkedIn.
 
 Для создания и редактирования необходимых нам значков будем использовать ресурс [Shields.io](https://img.shields.io/). Используем URL-адрес [https://img.shields.io/badge/](https://img.shields.io/badge/) и передадим ему дополнительные параметры, чтобы получить нужные значки.
-
-  
 
 Первый параметр, который мы передадим, будет следующего формата: `**Label-Color**`
 
@@ -124,16 +110,12 @@ https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white
 https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white&style=for-the-badge
 ```
 
-  
-
 По аналогии создадим URL-адреса для остальных значков:
 
 ```HTML
 https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white
 https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white
 ```
-
-  
 
 Добавим каждый URL в тег `<img/>`:
 
@@ -144,8 +126,6 @@ https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoC
   <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
 </div>
 ```
-
-  
 
 Мы поместили изображения внутрь тега `<div>`, чтобы все значки были расположены на одной строке. Код выше выведет только картинки из URL-адресов. Чтобы добавить ссылки на социальный сети, каждое изображение нужно поместить в тег `<a>`.
 
@@ -165,13 +145,9 @@ https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoC
 </div>
 ```
 
-  
-
 Вот что должно получиться:
 
-![[CleanShot_2023-05-03_at_07.32.062x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.32.062x.png)
 
 Далее в этом же разделе мы добавим счетчик просмотров профиля. Он будет подсчитывать количество просмотров вашей страницы на GitHub. Для значка счетчика воспользуемся проектом с открытым исходным кодом. Документация по этому проекту находится в профиле [Views Counter](https://github.com/antonkomarev/github-profile-views-counter) на GitHub. Механизм очень похож на добавление значков для социальных сетей. Используем параметры стилей и в итоге должен получиться следующий URL:
 
@@ -179,15 +155,11 @@ https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoC
 https://komarev.com/ghpvc/?username=имя пользователя на GitHub
 ```
 
-  
-
 Добавьте следующий код после тега `<div>` с `id="badges"`. Не забудьте указать верное имя пользователя.
 
 ```HTML
 <img src="https://komarev.com/ghpvc/?username=your-github-username&style=flat-square&color=blue" alt=""/>
 ```
-
-  
 
 И в конце этого раздела добавим текст и эмодзи. GIF-изображение можно взять с сайта [Giphy](https://giphy.com/stickers/transparent-hvRJCLFzcasrR4ia7z?utm_source=media-link&utm_medium=landing&utm_campaign=Media+Links&utm_term=).
 
@@ -202,13 +174,9 @@ https://komarev.com/ghpvc/?username=имя пользователя на GitHub
 
 Должно получиться что-то похожее:
 
-![[CleanShot_2023-05-03_at_07.37.132x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.37.132x.png)
 
 Нажимаем кнопку `Commit changes` и тем самым сохраняем изменения. Итак, мы завершили первую часть по созданию файла `README.md` в нашем профиле на GitHub.
-
-  
 
 ### **Добавление раздела «О себе»**
 
@@ -230,8 +198,6 @@ https://komarev.com/ghpvc/?username=имя пользователя на GitHub
 I am a Web Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Russia.
 ```
 
-  
-
 Далее напишем список фактов о себе. Для этого используем синтаксис Markdown. В начале каждой строки добавим эмодзи. Добавьте следующий код и внесите соответствующие изменения. И не забудьте изменить `your-tg-url` и `your-username` на правильные.
 
 ```Markdown
@@ -248,9 +214,7 @@ I am a Web Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/
 
 Вот что у нас получилось:
 
-![[CleanShot_2023-05-03_at_07.46.012x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.46.012x.png)
 
 ### **Добавление языков программирования и инструментов**
 
@@ -284,13 +248,9 @@ I am a Web Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ```
 
-  
-
 Вот результат того, что у нас получилось:
 
-![[CleanShot_2023-05-03_at_07.50.292x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.50.292x.png)
 
 ### **Добавление статистики GitHub**
 
@@ -322,13 +282,9 @@ https://github-readme-streak-stats.herokuapp.com/?user=your-github-username
 [![GitHub Streak](https://streak-stats.demolab.com?user=your-github-username&theme=transparent&hide_border=true&mode=weekly&fire=FF2222&dates=2C68F6&currStreakLabel=2C68F6&currStreakNum=2C68F6)](https://git.io/streak-stats)
 ```
 
-  
-
 Вот что у нас должно получиться:
 
-![[CleanShot_2023-05-03_at_07.55.012x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.55.012x.png)
 
 Также мы можем использовать ресурс [Streak Stats Website](http://github-readme-streak-stats.herokuapp.com/demo/) для генерации URL:
 
@@ -337,9 +293,7 @@ https://github-readme-streak-stats.herokuapp.com/?user=your-github-username
 
 3. После того как Markdown сгенерировался, нажмите `Copy To Clipboard` и добавьте скопированную информацию в `README.md`.
 
-![[CleanShot_2023-05-03_at_07.56.152x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.56.152x.png)
 
 Следующий проект, который мы будет использовать для статистики – это [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats), разработанный Anurag Hazra. Данный продукт предоставляет всевозможную статистику, но в этой статье мы будем использовать только одну. Она отображает ТОП языков программирования, которыми вы пользуетесь. Если вы хотите более подробно ознакомиться с этим проектом, можете почитать документацию в репозитории.
 
@@ -348,8 +302,6 @@ https://github-readme-streak-stats.herokuapp.com/?user=your-github-username
 ```Markdown
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username)](https://github.com/anuraghazra/github-readme-stats)
 ```
-
-  
 
 Здесь также можно доработать внешний вид (изменить цвет, ограничить количество языков и т. д.). Более подробно с возможностями кастомизации можно ознакомиться [здесь](https://github.com/anuraghazra/github-readme-stats).
 
@@ -361,9 +313,7 @@ https://github-readme-streak-stats.herokuapp.com/?user=your-github-username
 
 Ниже пример того, что получилось:
 
-![[CleanShot_2023-05-03_at_07.58.042x.png]]
-
-  
+![alt text](../../../_Изображения/CleanShot_2023-05-03_at_07.58.042x.png)
 
 ### Советы по оформлению репозиториев
 
@@ -372,15 +322,11 @@ https://github-readme-streak-stats.herokuapp.com/?user=your-github-username
 - Далее инструкцию по установке зависимостей и запуску проекта
 - Так же будет здорово, если вы приложите скриншоты работы программы
 
-  
-
 ### П**римеры хорошо оформленных профилей на github:**
 
 - [https://github.com/GusevADresume](https://github.com/GusevADresume)
 - [https://github.com/SerhioGonsales](https://github.com/SerhioGonsales?tab=overview&from=2024-06-01&to=2024-06-27)
 - [https://github.com/Ruzhaya/](https://github.com/Ruzhaya/Ruzhaya/blob/main/README.md?plain=1)
-
-  
 
 ### Полезное
 

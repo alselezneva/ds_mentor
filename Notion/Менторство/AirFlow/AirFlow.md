@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/4d17b0be-60ec-457e-9730-a34e5e8d3b7d)
-
+![image](https://github.com/user-attachments/assets/4a92067c-36b8-4c29-9604-20a8f1c1e46c)
 
 ## Курсы
 

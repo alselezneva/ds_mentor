@@ -1,10 +1,5 @@
----
-Категория:
-  - DS-материал
----
-  
+![image](https://github.com/user-attachments/assets/4d17b0be-60ec-457e-9730-a34e5e8d3b7d)
 
-![[_Изображения/image 10.png|image 10.png]]
 
 ## Курсы
 
